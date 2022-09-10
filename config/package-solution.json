@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "document-uploader-client-side-solution",
+    "id": "aa9c7d84-89f6-4635-8522-b1bd18b81dfa",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/document-uploader.sppkg"
+  }
+}
