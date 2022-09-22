@@ -3,6 +3,13 @@ export interface IMeetingForm {
     peoples: string[];
     fileInfo: any;
     status: boolean
+    type: string;
+    subtype: string;
+    typech:string[];
+    subtypech:string[];
+    date:Date;
+    product: string;
+    amount: string;
   }
 export type JsonPrimitive = string | number | boolean | null;
 export interface IJsonMap extends Record<string, JsonPrimitive | IJsonArray | IJsonMap> { }

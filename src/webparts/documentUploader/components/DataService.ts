@@ -42,4 +42,12 @@ export class DataService {
                 return data;
             });
     }
+    public getchoice(listName: string, columnname: string): Promise<SPHttpClientResponse> {
+        const restURL = this.context.pageContext.web.absoluteUrl +
+            `/_api/web/lists/GetByTitle('${listName}')/fields?$filter=EntityPropertyName eq '${columnname}'`;
+        return this.context.spHttpClient.get(restURL,
+            SPHttpClient.configurations.v1).then((data: SPHttpClientResponse) => {
+                return data;
+            });
+    }
 }
